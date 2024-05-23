@@ -1,0 +1,403 @@
+10:25:20 **** Build of configuration Debug for project QiWirelessCharger ****
+make all 
+Building file: ../src/chargerMain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=11059200UL -MMD -MP -MF"src/chargerMain.d" -MT"src/chargerMain.o" -c -o "src/chargerMain.o" "../src/chargerMain.c"
+../src/chargerMain.c:2:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../src/chargerMain.c:3:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../src/chargerMain.c
+ 
+Building target: QiWirelessCharger.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,QiWirelessCharger.map -mmcu=atmega32 -o "QiWirelessCharger.elf"  ./src/chargerMain.o   
+Finished building target: QiWirelessCharger.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S QiWirelessCharger.elf  >"QiWirelessCharger.lss"
+Finished building: QiWirelessCharger.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 QiWirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:32:52 **** Incremental Build of configuration Debug for project QiWirelessCharger ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 QiWirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:56:49 **** Incremental Build of configuration Debug for project QiWirelessCharger ****
+make all 
+Building file: ../src/chargerMain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=11059200UL -MMD -MP -MF"src/chargerMain.d" -MT"src/chargerMain.o" -c -o "src/chargerMain.o" "../src/chargerMain.c"
+../src/chargerMain.c:2:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../src/chargerMain.c:3:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../src/chargerMain.c
+ 
+Building target: QiWirelessCharger.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,QiWirelessCharger.map -mmcu=atmega32 -o "QiWirelessCharger.elf"  ./src/chargerMain.o   
+Finished building target: QiWirelessCharger.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S QiWirelessCharger.elf  >"QiWirelessCharger.lss"
+Finished building: QiWirelessCharger.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 QiWirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:13:21 **** Incremental Build of configuration Debug for project QiWirelessCharger ****
+make all 
+Building file: ../src/chargerMain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=11059200UL -MMD -MP -MF"src/chargerMain.d" -MT"src/chargerMain.o" -c -o "src/chargerMain.o" "../src/chargerMain.c"
+../src/chargerMain.c:2:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../src/chargerMain.c:3:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../src/chargerMain.c
+ 
+Building target: QiWirelessCharger.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,QiWirelessCharger.map -mmcu=atmega32 -o "QiWirelessCharger.elf"  ./src/chargerMain.o   
+Finished building target: QiWirelessCharger.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S QiWirelessCharger.elf  >"QiWirelessCharger.lss"
+Finished building: QiWirelessCharger.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex QiWirelessCharger.elf  "QiWirelessCharger.hex"
+Finished building: QiWirelessCharger.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 QiWirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:49:52 **** Incremental Build of configuration Debug for project QiWirelessCharger ****
+make all 
+Building file: ../src/chargerMain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=11059200UL -MMD -MP -MF"src/chargerMain.d" -MT"src/chargerMain.o" -c -o "src/chargerMain.o" "../src/chargerMain.c"
+../src/chargerMain.c:2:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../src/chargerMain.c:3:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../src/chargerMain.c
+ 
+Building target: QiWirelessCharger.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,QiWirelessCharger.map -mmcu=atmega32 -o "QiWirelessCharger.elf"  ./src/chargerMain.o   
+Finished building target: QiWirelessCharger.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S QiWirelessCharger.elf  >"QiWirelessCharger.lss"
+Finished building: QiWirelessCharger.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex QiWirelessCharger.elf  "QiWirelessCharger.hex"
+Finished building: QiWirelessCharger.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 QiWirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:55:46 **** Incremental Build of configuration Debug for project QiWirelessCharger ****
+make all 
+Building file: ../src/chargerMain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=11059200UL -MMD -MP -MF"src/chargerMain.d" -MT"src/chargerMain.o" -c -o "src/chargerMain.o" "../src/chargerMain.c"
+../src/chargerMain.c:2:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../src/chargerMain.c:3:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../src/chargerMain.c
+ 
+Building target: QiWirelessCharger.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,QiWirelessCharger.map -mmcu=atmega32 -o "QiWirelessCharger.elf"  ./src/chargerMain.o   
+Finished building target: QiWirelessCharger.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S QiWirelessCharger.elf  >"QiWirelessCharger.lss"
+Finished building: QiWirelessCharger.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex QiWirelessCharger.elf  "QiWirelessCharger.hex"
+Finished building: QiWirelessCharger.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 QiWirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:55:59 **** Incremental Build of configuration Debug for project QiWirelessCharger ****
+make all 
+Building file: ../src/chargerMain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=11059200UL -MMD -MP -MF"src/chargerMain.d" -MT"src/chargerMain.o" -c -o "src/chargerMain.o" "../src/chargerMain.c"
+In file included from ../src/chargerMain.c:3:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../src/chargerMain.c
+ 
+Building target: QiWirelessCharger.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,QiWirelessCharger.map -mmcu=atmega32 -o "QiWirelessCharger.elf"  ./src/chargerMain.o   
+Finished building target: QiWirelessCharger.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S QiWirelessCharger.elf  >"QiWirelessCharger.lss"
+Finished building: QiWirelessCharger.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex QiWirelessCharger.elf  "QiWirelessCharger.hex"
+Finished building: QiWirelessCharger.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 QiWirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:59:17 **** Incremental Build of configuration Debug for project QiWirelessCharger ****
+make all 
+Building file: ../src/chargerMain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=11059200UL -MMD -MP -MF"src/chargerMain.d" -MT"src/chargerMain.o" -c -o "src/chargerMain.o" "../src/chargerMain.c"
+In file included from ../src/chargerMain.c:3:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../src/chargerMain.c
+ 
+Building target: QiWirelessCharger.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,QiWirelessCharger.map -mmcu=atmega32 -o "QiWirelessCharger.elf"  ./src/chargerMain.o   
+Finished building target: QiWirelessCharger.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S QiWirelessCharger.elf  >"QiWirelessCharger.lss"
+Finished building: QiWirelessCharger.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex QiWirelessCharger.elf  "QiWirelessCharger.hex"
+Finished building: QiWirelessCharger.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 QiWirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:52:25 **** Incremental Build of configuration Debug for project QiWirelessCharger ****
+make all 
+Building file: ../src/chargerMain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=11059200UL -MMD -MP -MF"src/chargerMain.d" -MT"src/chargerMain.o" -c -o "src/chargerMain.o" "../src/chargerMain.c"
+In file included from ../src/chargerMain.c:3:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../src/chargerMain.c
+ 
+Building target: QiWirelessCharger.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,QiWirelessCharger.map -mmcu=atmega32 -o "QiWirelessCharger.elf"  ./src/chargerMain.o   
+Finished building target: QiWirelessCharger.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S QiWirelessCharger.elf  >"QiWirelessCharger.lss"
+Finished building: QiWirelessCharger.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex QiWirelessCharger.elf  "QiWirelessCharger.hex"
+Finished building: QiWirelessCharger.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 QiWirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:58:28 **** Incremental Build of configuration Debug for project QiWirelessCharger ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 QiWirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:32:38 **** Incremental Build of configuration Debug for project QiWirelessCharger ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 QiWirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:33:45 **** Incremental Build of configuration Debug for project QiWirelessCharger ****
+make all 
+Building file: ../src/chargerMain.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=11059200UL -MMD -MP -MF"src/chargerMain.d" -MT"src/chargerMain.o" -c -o "src/chargerMain.o" "../src/chargerMain.c"
+In file included from ../src/chargerMain.c:3:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../src/chargerMain.c
+ 
+Building target: QiWirelessCharger.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,QiWirelessCharger.map -mmcu=atmega32 -o "QiWirelessCharger.elf"  ./src/chargerMain.o   
+Finished building target: QiWirelessCharger.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S QiWirelessCharger.elf  >"QiWirelessCharger.lss"
+Finished building: QiWirelessCharger.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex QiWirelessCharger.elf  "QiWirelessCharger.hex"
+Finished building: QiWirelessCharger.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 QiWirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:40:14 **** Incremental Build of configuration Debug for project QiWirelessCharger ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 QiWirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

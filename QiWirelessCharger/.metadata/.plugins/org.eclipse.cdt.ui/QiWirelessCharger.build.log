@@ -1,0 +1,20 @@
+23:40:14 **** Incremental Build of configuration Debug for project QiWirelessCharger ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 QiWirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+23:40:15 Build Finished. 0 errors, 0 warnings. (took 727ms)
+

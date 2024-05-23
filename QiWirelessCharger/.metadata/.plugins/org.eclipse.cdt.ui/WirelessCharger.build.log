@@ -1,0 +1,38 @@
+10:19:49 **** Incremental Build of configuration Debug for project WirelessCharger ****
+make all 
+Building file: ../src/QiWirelessCharger.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=11059200UL -MMD -MP -MF"src/QiWirelessCharger.d" -MT"src/QiWirelessCharger.o" -c -o "src/QiWirelessCharger.o" "../src/QiWirelessCharger.c"
+../src/QiWirelessCharger.c:2:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../src/QiWirelessCharger.c:3:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../src/QiWirelessCharger.c
+ 
+Building target: WirelessCharger.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,WirelessCharger.map -mmcu=atmega32 -o "WirelessCharger.elf"  ./src/QiWirelessCharger.o   
+Finished building target: WirelessCharger.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S WirelessCharger.elf  >"WirelessCharger.lss"
+Finished building: WirelessCharger.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 WirelessCharger.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9910 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:         13 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+10:19:53 Build Finished. 0 errors, 2 warnings. (took 3s.509ms)
+
